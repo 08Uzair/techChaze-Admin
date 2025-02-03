@@ -4,7 +4,8 @@
   "info": {
     "singularName": "project",
     "pluralName": "projects",
-    "displayName": "project"
+    "displayName": "project",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -14,21 +15,14 @@
     "title": {
       "type": "string"
     },
-    "interest": {
-      "type": "enumeration",
-      "enum": [
-        "Web Design",
-        "Product Design",
-        "UI/UX Design",
-        "Digital Ad Design",
-        "Logo Design"
-      ]
-    },
     "expectedTime": {
       "type": "date"
     },
     "note": {
       "type": "text"
+    },
+    "interest": {
+      "type": "string"
     }
   }
 }

@@ -372,6 +372,7 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
 export interface ApiProjectProject extends Struct.CollectionTypeSchema {
   collectionName: 'projects';
   info: {
+    description: '';
     displayName: 'project';
     pluralName: 'projects';
     singularName: 'project';
@@ -384,15 +385,7 @@ export interface ApiProjectProject extends Struct.CollectionTypeSchema {
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     expectedTime: Schema.Attribute.Date;
-    interest: Schema.Attribute.Enumeration<
-      [
-        'Web Design',
-        'Product Design',
-        'UI/UX Design',
-        'Digital Ad Design',
-        'Logo Design',
-      ]
-    >;
+    interest: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
