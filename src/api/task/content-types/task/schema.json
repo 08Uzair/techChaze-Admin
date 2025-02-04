@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "projects",
+  "collectionName": "tasks",
   "info": {
-    "singularName": "project",
-    "pluralName": "projects",
-    "displayName": "project",
+    "singularName": "task",
+    "pluralName": "tasks",
+    "displayName": "task",
     "description": ""
   },
   "options": {
@@ -18,16 +18,17 @@
     "expectedTime": {
       "type": "date"
     },
-    "note": {
-      "type": "text"
-    },
-    "interest": {
+    "tags": {
       "type": "string"
     },
-    "tasks": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::task.task"
+    "Description": {
+      "type": "text"
+    },
+    "label": {
+      "type": "string"
+    },
+    "projectId": {
+      "type": "string"
     },
     "startDate": {
       "type": "date"
