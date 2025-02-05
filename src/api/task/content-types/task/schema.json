@@ -18,20 +18,23 @@
     "expectedTime": {
       "type": "date"
     },
-    "tags": {
-      "type": "string"
-    },
-    "Description": {
+    "note": {
       "type": "text"
-    },
-    "label": {
-      "type": "string"
     },
     "projectId": {
       "type": "string"
     },
     "startDate": {
       "type": "date"
+    },
+    "statusBar": {
+      "type": "enumeration",
+      "enum": [
+        "Todo",
+        "In Progress",
+        "Review",
+        "Completed"
+      ]
     }
   }
 }
