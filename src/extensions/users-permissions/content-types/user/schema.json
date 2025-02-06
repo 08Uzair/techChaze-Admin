@@ -67,6 +67,12 @@
     },
     "confirmPassword": {
       "type": "string"
+    },
+    "DOB": {
+      "type": "date"
+    },
+    "phone": {
+      "type": "biginteger"
     }
   }
 }
